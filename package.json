@@ -1,0 +1,21 @@
+{
+  "name": "js-selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/thehackernews.js --timeout 10000",
+    "api": "mocha tests/api.js --timeout 10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "chromedriver": "^96.0.0",
+    "mocha": "^9.1.3",
+    "ms-chromium-edge-driver": "^0.4.3",
+    "selenium-webdriver": "^4.1.0"
+  }
+}
