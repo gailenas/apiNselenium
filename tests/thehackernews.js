@@ -21,8 +21,11 @@ describe('Verify that The Hacker News logo exists', async () => {
 
   it('Should agree Google cookies policy', async () => {
     const agreePolicyButton = driver.findElement(
-      By.xpath('//div[contains(text(), "Sutinku")]')
+      By.xpath(
+        '//div[contains(text(), "I agree")] | //div[contains(text(), "Sutinku")]'
+      )
     );
+
     agreePolicyButton.click();
   });
 
